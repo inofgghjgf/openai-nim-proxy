@@ -1,30 +1,17 @@
 {
-  "name": "nvidia-nim-janitor-proxy",
+  "name": "openai-nim-proxy",
   "version": "1.0.0",
-  "description": "Proxy server to use NVIDIA NIM (DeepSeek 3.2) with Janitor AI",
-  "main": "proxy-server.js",
+  "description": "OpenAI compatible proxy for NVIDIA NIM API",
+  "main": "server.js",
   "scripts": {
-    "start": "node proxy-server.js",
-    "dev": "nodemon proxy-server.js",
-    "test": "node test-proxy.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "axios": "^1.6.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1"
+    "axios": "^1.6.0"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
-  "keywords": [
-    "nvidia",
-    "nim",
-    "deepseek",
-    "janitor-ai",
-    "proxy",
-    "openai"
-  ],
-  "author": "Your Name",
-  "license": "MIT"
+  "engines": {
+    "node": "18.x"
+  }
 }
